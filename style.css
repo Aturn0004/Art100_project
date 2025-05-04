@@ -167,17 +167,27 @@ body {
     border-radius: 8px; 
   }
 
+  .outer-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+    padding: 20px;
+  }
+  
   .images-container {
     display: flex;
-    justify-content: space-between;
     gap: 20px;
+    max-width: 800px; 
+    width: 100%;
+    justify-content: center;
   }
   
   .picleft, .picright {
-    max-width: 48%; 
-    height: auto; 
-    object-fit: cover; 
-    border-radius: 8px; 
+    width: 48%;
+    max-width: 350px; 
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
   }
 
   .Space {
@@ -220,16 +230,17 @@ body {
     }
 
     .images-container {
-        flex-direction: column; 
-        gap: 10px; 
+        flex-direction: column;
+        align-items: center;
       }
     
       .picleft, .picright {
-        max-width: 100%; 
-      }
+        width: 90%;
+        max-width: 90%;
+    }
 
       .Space {
         width: 100%; 
         max-width: none;
-      }
+    }
   }
