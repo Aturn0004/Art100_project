@@ -183,6 +183,7 @@ body {
   }
   
   .picleft, .picright {
+    display: block; 
     width: 48%;
     max-width: 350px; 
     height: auto;
